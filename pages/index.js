@@ -46,7 +46,7 @@ HomePage.propTypes = {
     data: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
     const apiEndpoint = process.env.PRISMIC_URL;
     const accessToken = process.env.PRISMIC_ACCESS_TOKEN;
 
